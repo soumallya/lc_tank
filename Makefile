@@ -6,12 +6,10 @@ start: source
 
 
 clean:
-	rm -r *.py *.pyc output
+	rm -r output
 
 
 test: source
-	cp source/test_code.py .
-	cp source/LC_tank_both.py .
-	python test_code.py
-	rm *.py *.pyc
+	python source/test_code.py
+	
 
